@@ -1,0 +1,28 @@
+.shoppingCart{
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  &>i{
+    font-size: 2rem;
+    color: white;
+  }
+  &>span{
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    background-color: orange;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10rem;
+  }
+}

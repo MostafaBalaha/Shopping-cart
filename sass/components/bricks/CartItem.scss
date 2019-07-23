@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+.cartItem{
+  margin-top: 1rem;
+  .item{
+    &__photo{
+      width: 8rem;
+      height: 7rem;
+      padding:0 1rem ;
+    }
+
+    &__title{
+      margin-top: 1rem;
+      color: white;
+      font-family: 'Handlee', cursive;
+      font-size: 1.6rem;
+
+    }
+
+    &__quantity{
+      color: white;
+      font-family: 'Handlee', cursive;
+      font-size: 1rem;
+
+    }
+
+    &__price{
+      color: white;
+      font-family: 'Handlee', cursive;
+      font-size: 1rem;
+
+    }
+
+    &__remove{
+      position: absolute;
+      top: 0;
+      right: 2rem;
+      color: white;
+      font-weight: bold;
+      font-size: 1.4rem;
+      font-family: 'Handlee', cursive;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      &:active{
+        outline: none;
+        border: none;
+      }
+    }
+
+  }
+  &__seperateLine{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+}

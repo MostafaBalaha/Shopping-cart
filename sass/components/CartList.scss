@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+.cartList{
+
+  display: block;
+  width: 35rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: 999;
+  transition: all 0.4s;
+  &__header{
+
+    &>i{
+      font-size: 4rem;
+      color: white;
+      width: 100%;
+      text-align: center;
+
+    }
+    &>span{
+      position: absolute;
+      top: 1.9rem;
+      left: 50%;
+      transform: translateX(-20%);
+      background-color: orange;
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 10rem;
+    }
+
+
+  }
+  &__heading
+  {
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  &__close{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Permanent Marker', cursive;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    position: absolute;
+    &:active{
+      outline: none;
+      border: none;
+    }
+
+  }
+  &__seperateLine{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__items{
+    max-height: 28.3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .checkout{
+    z-index: 100;
+    width: 100%;
+    height: 15rem;
+    box-shadow:inset 0 5px 13px rgba(gray,0.3);
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    &__heading{
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 2rem;
+    }
+    &__totalPrice{
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: 'Handlee', cursive;
+      font-size: 2rem;
+      margin-top: 1rem;
+      &>span{
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+    &__button{
+      color: black;
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: 'Permanent Marker', cursive;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: center;
+      padding: 0.2rem 1rem;
+      background-color: white;
+      &:active{
+        outline: none;
+        border: none;
+        transform: scale(1.02);
+      }
+    }
+  }
+}
